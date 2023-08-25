@@ -1,6 +1,23 @@
 let myLibrary = [{title: 'The Hoobit', author: 'J.R.R. Tolkien', pages: 295, read: 'read'}, 
                 {title: 'Green Mile', author: 'Stephen KING', pages: 502, read: 'read'}];
 
+// CLASS VERSION
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info() {
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
+    }
+}
+
+/* CONSTRUCTOR VERSION
+
+const test = new Book('the title', 'the author', 23, 'read')
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -9,7 +26,7 @@ function Book(title, author, pages, read) {
     this.info = function() {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
     }
-};
+};*/
 
 function addBookToLibrary(title, author, pages, read) {
     const book = new Book(title, author, pages, read)
