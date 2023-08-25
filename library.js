@@ -1,6 +1,7 @@
 let myLibrary = [{title: 'The Hoobit', author: 'J.R.R. Tolkien', pages: 295, read: 'read'}, 
                 {title: 'Green Mile', author: 'Stephen KING', pages: 502, read: 'read'}];
 
+// CLASS VERSION
 class Book {
     constructor(title, author, pages, read) {
         this.title = title;
@@ -14,7 +15,8 @@ class Book {
     }
 }
 
-/*
+/* CONSTRUCTOR VERSION
+
 const test = new Book('the title', 'the author', 23, 'read')
 function Book(title, author, pages, read) {
     this.title = title;
