@@ -1,134 +1,139 @@
 body {
-    font-family: 'Roboto';
-    background-color: rgb(210, 210, 210);
+  font-family: "Roboto";
+  background-color: rgb(210, 210, 210);
 }
 
-
 #container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .titleLib {
-    color: navy 
+  color: navy;
 }
 
 .textBox {
-    border: 2px solid black;
-    width: 300px;
-    height: 300px;
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
 }
 
 .main2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    color: navy
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  color: navy;
 }
 
 .lists {
-  display:grid;
+  display: grid;
 }
 
 .lists > * {
-    display: grid;
-    text-align: center;
+  display: grid;
+  text-align: center;
 }
 
 #status {
-    background: none;
-    font-size: 15px;
-    border: none;
-    font-weight: bold;
-    width: 80px;
-    justify-self: center;
-    align-items: center;
-
+  background: none;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  width: 80px;
+  justify-self: center;
+  align-items: center;
 }
 #status:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 #close {
-    height: 27px;
-    width: 27px;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 3px;
-    left: 224px;
+  height: 27px;
+  width: 27px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 3px;
+  left: 224px;
 }
 #form {
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: rgb(228, 228, 228);
-    padding-top: 20px;
-    color: navy
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(228, 228, 228);
+  padding-top: 20px;
+  color: navy;
 }
 #inputs {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 .inputs {
-    margin: 10px;
-    display: flex;
+  margin: 10px;
+  display: flex;
 }
 #title,
 #author,
 #pages {
-    margin-left: auto;
-    
+  margin-left: auto;
 }
 .radio {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .btnSubmit {
-    margin-top: 10px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
+  margin-top: 10px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
 }
 
 #header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .delete {
-    width: 20px;
-    height: 20px;
-    justify-self: center;
-    align-items: center;
-    filter: invert(13%) sepia(73%) saturate(4825%) hue-rotate(357deg) brightness(100%) contrast(124%);
+  width: 20px;
+  height: 20px;
+  justify-self: center;
+  align-items: center;
+  filter: invert(13%) sepia(73%) saturate(4825%) hue-rotate(357deg)
+    brightness(100%) contrast(124%);
 }
 img.deleteBtn {
-    filter: invert(13%) sepia(73%) saturate(4825%) hue-rotate(357deg) brightness(100%) contrast(124%);
-    
+  filter: invert(13%) sepia(73%) saturate(4825%) hue-rotate(357deg)
+    brightness(100%) contrast(124%);
 }
 .delete:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .title2,
 .author2,
 .pages2,
 .read2,
-.delete2  {
-    justify-self: center;
+.delete2 {
+  justify-self: center;
 }
 
 .add {
-    background: none;
-    border: 5px solid white;
-    color: white;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 20px;
-    
+  background: none;
+  border: 5px solid white;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+input:invalid {
+  border: 1px solid red;
+  background-color: rgb(253, 222, 222);
+}
+
+input:valid {
+  background-color: rgb(202, 255, 202);
 }
